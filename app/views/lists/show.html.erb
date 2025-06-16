@@ -1,0 +1,9 @@
+<div class="position-relative">
+  <div class="card-category card-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('list_background.jpg') %>)">
+  <h2>My List Details: </h2>
+    <%= @list.name %>
+  </div>
+
+
+<%= link_to "Bookmark a movie", new_list_bookmark_path(@list) %>
+</div>
